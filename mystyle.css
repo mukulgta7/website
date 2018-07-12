@@ -1,0 +1,16 @@
+.jumbotron{
+    background: url("india.jpg");
+}
+.dateclass {
+    width: 100%;
+}
+
+.dateclass.placeholderclass::before {
+    width: 100%;
+    content: attr(placeholder);
+}
+
+.dateclass.placeholderclass:hover::before {
+    width: 0%;
+    content: "";
+}

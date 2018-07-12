@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="jscript.js"></script>
+    <title>BookMyTrip</title>
+    <link href="mystyle.css" rel="stylesheet">
+</head>
+<body>
+<div>
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <a class="navbar-brand" href="#">
+                <img src="trip.png" alt="logo" style="width:auto;height: 40px">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white; font: bolder">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Buses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Train Tickets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Flight Tickets</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="getLocation()" id="demo" >
+                    <img src="locate.png" alt="logo" style="width:30px">
+                </a>
+            </li>
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img src="location.png" alt="logo" style="width:30px">
+                    Region
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Delhi</a>
+                    <a class="dropdown-item" href="#">Mumbai</a>
+                    <a class="dropdown-item" href="#">Chennai</a>
+                    <a class="dropdown-item" href="#">Kolkata</a>
+                    <a class="dropdown-item" href="#">Banglore</a>
+                    <a class="dropdown-item" href="#">Hydrabad</a>
+
+                </div>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img src="profile.png" alt="logo" style="width:40px">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Sign In</a>
+                    <a class="dropdown-item" href="#">Sign Up</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container mt-3">
+            <form>
+              <div class="d-flex mb-5">
+                <div class="p-2 flex-fill bg-danger">
+                    <input type="text" placeholder="From">
+                </div>
+                <div class="p-2 flex-fill bg-secondary">
+                    <input type="text" placeholder="To"></div>
+                <div class="p-2 flex-fill bg-danger">
+                    <input type="text" placeholder="ONWARD">
+                </div>
+                <div class="p-2 flex-fill bg-secondary">
+                    <input type="text" placeholder="RETURN">
+                </div>
+                  <div class="p-2 flex-fill bg-danger" >
+                     <button>Submit</button>
+                  </div>
+              </div>
+            </form>
+    </div>
+</body>
+</html>
